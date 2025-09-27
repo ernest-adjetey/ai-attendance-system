@@ -36,7 +36,7 @@ class SimpleAttendanceDB:
         
         conn.commit()
         conn.close()
-        print("✅ Database initialized successfully!")
+        print("Database initialized successfully!")
     
     def add_student(self, student_id, name, email):
         """Add student without face recognition for now"""
@@ -49,10 +49,10 @@ class SimpleAttendanceDB:
                 VALUES (?, ?, ?)
             ''', (student_id, name, email))
             conn.commit()
-            print(f"✅ Student {name} added successfully!")
+            print(f"Student {name} added successfully!")
             return True
         except sqlite3.IntegrityError:
-            print("❌ Student ID already exists!")
+            print("Student ID already exists!")
             return False
         finally:
             conn.close()
@@ -64,5 +64,5 @@ if __name__ == '__main__':
     # Add a test student
     db.add_student("TEST001", "John Doe", "john@test.com")
     
-    print("🎉 Simple attendance system is working!")
+    print("Simple attendance system is working!")
     print("You can now install packages gradually.")
