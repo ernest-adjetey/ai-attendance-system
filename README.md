@@ -35,6 +35,21 @@ I built the system end to end, including:
 
 The project gave me hands-on experience combining computer vision, backend engineering, and data storage into a practical product workflow.
 
+## Demo Screens
+
+### Live Recognition
+![Live Recognition](./live-recognition.png)
+
+### Attendance Log
+![Attendance Log](./attendance-log.png)
+
+## How to Run
+
+1. Clone the repository  
+2. Install dependencies from `requirements.txt`  
+3. Run the Flask app  
+4. Open the local web interface and start attendance tracking  
+
 ## Future Improvements
 
 - Better face embedding and recognition accuracy
